@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kostenlos starten · estatio.</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="auth-page">
+
+  <div class="auth-form-side">
+    <div class="auth-form-inner">
+      <a href="index.html" class="logo" style="display: block; margin-bottom: 48px;">estatio<span class="lime-dot">.</span></a>
+
+      <h1>Kostenlos starten<span class="lime-dot">.</span></h1>
+      <p class="sub">Keine Kreditkarte, kein Zeitlimit. Während der Beta voller Zugang.</p>
+
+      <form onsubmit="event.preventDefault(); window.location='dashboard.html';">
+        <div class="field">
+          <label for="name">Dein Name</label>
+          <input type="text" id="name" placeholder="Marco Jansen" required />
+        </div>
+
+        <div class="field">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" placeholder="marco@maklerhaus.de" required />
+        </div>
+
+        <div class="field">
+          <label for="company">Firma <span style="color: var(--slate-light); font-weight: 400;">(optional)</span></label>
+          <input type="text" id="company" placeholder="Maklerhaus Jansen GmbH" />
+        </div>
+
+        <div class="field">
+          <label for="password">Passwort</label>
+          <input type="password" id="password" placeholder="Mindestens 8 Zeichen" required />
+        </div>
+
+        <div style="display: flex; gap: 8px; align-items: flex-start; margin: 16px 0 24px; font-size: 12px; color: var(--slate); line-height: 1.5;">
+          <input type="checkbox" style="margin-top: 3px;" required />
+          <span>Ich stimme den <a href="#" style="color: var(--ink); font-weight: 500;">AGB</a> und der <a href="#" style="color: var(--ink); font-weight: 500;">Datenschutzerklärung</a> zu.</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Account erstellen →</button>
+      </form>
+
+      <div class="divider-or">oder</div>
+
+      <button class="social-btn">
+        <span style="font-weight: 600;">G</span>
+        Mit Google fortfahren
+      </button>
+      <button class="social-btn">
+        <span></span>
+        Mit Apple fortfahren
+      </button>
+
+      <div class="auth-foot">
+        Schon einen Account? <a href="login.html">Anmelden →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-side">
+    <div style="font-family: var(--serif); font-size: 22px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
+
+    <div>
+      <div style="font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--lime); margin-bottom: 18px;">Was du sofort bekommst</div>
+      <h2 class="auth-side-headline">
+        Drei Klicks bis<br/>zum ersten<br/>Exposé<span class="lime-dot">.</span>
+      </h2>
+
+      <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: flex; gap: 14px; align-items: start;">
+          <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--lime); color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 500; flex-shrink: 0;">1</div>
+          <div>
+            <div style="font-family: var(--serif); font-size: 17px; letter-spacing: -0.01em; margin-bottom: 4px;">Asset wählen</div>
+            <div style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5;">MFH, Gewerbe, Portfolio oder ETW</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: start;">
+          <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--lime); color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 500; flex-shrink: 0;">2</div>
+          <div>
+            <div style="font-family: var(--serif); font-size: 17px; letter-spacing: -0.01em; margin-bottom: 4px;">Vorlage übernehmen</div>
+            <div style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5;">142 Layouts, alle handgeprüft</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: start;">
+          <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--lime); color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 500; flex-shrink: 0;">3</div>
+          <div>
+            <div style="font-family: var(--serif); font-size: 17px; letter-spacing: -0.01em; margin-bottom: 4px;">Daten einpflegen</div>
+            <div style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5;">KI hilft dir mit Texten und Kennzahlen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="auth-quote">
+        "Endlich ein Tool, das aussieht wie 2026 — und nicht wie ein In­tranet aus 2008."
+      </div>
+      <div class="auth-quote-meta">
+        Thomas W. · Family Office, Frankfurt
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard · estatio.</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background: var(--bone);">
+
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="logo">estatio<span class="lime-dot">.</span></a>
+
+    <div class="sidebar-section-label">Arbeitsbereich</div>
+    <a href="dashboard.html" class="sidebar-item active">
+      <span class="icon">▢</span>
+      Meine Projekte
+    </a>
+    <a href="marketplace.html" class="sidebar-item">
+      <span class="icon">◇</span>
+      Marktplatz
+    </a>
+    <a href="#" class="sidebar-item">
+      <span class="icon">⊞</span>
+      Vorlagen
+    </a>
+    <a href="#" class="sidebar-item">
+      <span class="icon">●</span>
+      Marken-Kit
+    </a>
+    <a href="#" class="sidebar-item">
+      <span class="icon">⊙</span>
+      Team
+    </a>
+
+    <div class="sidebar-section-label">Bibliothek</div>
+    <a href="#" class="sidebar-item">
+      <span class="icon">▤</span>
+      Objekte
+    </a>
+    <a href="#" class="sidebar-item">
+      <span class="icon">▣</span>
+      Bilder
+    </a>
+    <a href="#" class="sidebar-item">
+      <span class="icon">Aa</span>
+      Schriften
+    </a>
+
+    <div class="sidebar-section-label">Account</div>
+    <a href="#" class="sidebar-item">
+      <span class="icon">⚙</span>
+      Einstellungen
+    </a>
+    <a href="index.html" class="sidebar-item">
+      <span class="icon">↩</span>
+      Abmelden
+    </a>
+
+    <div class="sidebar-footer">
+      <span class="upgrade-tag">Beta</span>
+      <div class="quota">14 von 50 Exposés</div>
+      <div class="quota-bar"><div class="quota-fill"></div></div>
+      <div style="font-size: 11px; color: var(--slate);">Während der Beta unbegrenzt</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="main-header">
+      <div>
+        <div class="sub">Mittwoch · 20. Mai 2026</div>
+        <h1>Guten Morgen, Marco<span class="lime-dot">.</span></h1>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <button class="btn btn-ghost">Importieren</button>
+        <button class="btn btn-primary">+ Neues Exposé</button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">Aktive Projekte</div>
+        <div class="stat-value">14</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Pipeline</div>
+        <div class="stat-value">274 Mio €</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Aufrufe diesen Monat</div>
+        <div class="stat-value">1.842</div>
+      </div>
+      <div class="stat lime">
+        <div class="stat-label">Conversion</div>
+        <div class="stat-value">38 %</div>
+      </div>
+    </div>
+
+    <div class="projects-row">
+      <div class="title">Zuletzt bearbeitet</div>
+      <div class="filters">
+        <span class="mini-pill active">Alle</span>
+        <span class="mini-pill">MFH</span>
+        <span class="mini-pill">Gewerbe</span>
+        <span class="mini-pill">Portfolio</span>
+        <span class="mini-pill">ETW</span>
+      </div>
+    </div>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <div class="project-preview ink">
+          <div style="font-family: var(--serif); font-size: 12px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
+          <div style="margin-top: 20px;">
+            <div class="project-tag">42 WE · Berlin</div>
+            <div class="project-title" style="margin-top: 6px;">Wohnpark<br/>Charlottenburg</div>
+          </div>
+          <div class="project-bottom">
+            <div class="project-price" style="color: var(--lime);">12,4 Mio €</div>
+            <div class="project-dot"></div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>MFH · Zinshaus</span>
+          <span>vor 2 Std.</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-preview lime">
+          <div style="font-family: var(--serif); font-size: 12px; letter-spacing: -0.04em;">estatio<span style="color: var(--ink);">.</span></div>
+          <div style="margin-top: 20px;">
+            <div class="project-tag" style="color: rgba(14,14,12,0.65);">Frankfurt · Class A</div>
+            <div class="project-title" style="margin-top: 6px;">Office Tower<br/>Mainufer</div>
+          </div>
+          <div class="project-bottom">
+            <div class="project-price">48,0 Mio €</div>
+            <div class="project-dot"></div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>Gewerbe · Office</span>
+          <span>gestern</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-preview bone">
+          <div style="font-family: var(--serif); font-size: 12px; letter-spacing: -0.04em;">estatio<span style="color: var(--persimmon);">.</span></div>
+          <div style="margin-top: 20px;">
+            <div class="project-tag" style="color: var(--slate);">7 Objekte · DE-Süd</div>
+            <div class="project-title" style="margin-top: 6px;">Süd-Portfolio<br/>2026</div>
+          </div>
+          <div class="project-bottom">
+            <div class="project-price">86,5 Mio €</div>
+            <div class="project-dot" style="background: var(--persimmon);"></div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>Portfolio · Mixed</span>
+          <span>vor 3 Tagen</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-preview persimmon">
+          <div style="font-family: var(--serif); font-size: 12px; letter-spacing: -0.04em;">estatio<span style="color: var(--ink);">.</span></div>
+          <div style="margin-top: 20px;">
+            <div class="project-tag" style="color: rgba(255,255,255,0.75);">Hamburg · Mixed-Use</div>
+            <div class="project-title" style="margin-top: 6px;">Quartier<br/>Hafencity</div>
+          </div>
+          <div class="project-bottom">
+            <div class="project-price">124,0 Mio €</div>
+            <div class="project-dot"></div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>Mixed-Use</span>
+          <span>letzte Woche</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-preview paper">
+          <div style="font-family: var(--serif); font-size: 12px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
+          <div style="margin-top: 20px;">
+            <div class="project-tag" style="color: var(--slate-light);">München · Premium</div>
+            <div class="project-title" style="margin-top: 6px;">Penthouse<br/>Bogenhausen</div>
+          </div>
+          <div class="project-bottom">
+            <div class="project-price">4,2 Mio €</div>
+            <div class="project-dot"></div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>ETW · Penthouse</span>
+          <span>2 Wochen</span>
+        </div>
+      </div>
+
+      <a href="marketplace.html" class="project-add">
+        <div class="add-circle">+</div>
+        <div class="add-text">Neues Exposé starten</div>
+      </a>
+
+    </div>
+
+    <div style="margin-top: 60px; padding: 32px; background: var(--paper); border: 0.5px solid var(--border); border-radius: var(--r-lg); display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 10px;">Schon gewusst</div>
+        <h3 style="font-family: var(--serif); font-size: 22px; letter-spacing: -0.01em; font-weight: 400; line-height: 1.2; margin-bottom: 8px;">8 neue Vorlagen im Marktplatz<span class="lime-dot">.</span></h3>
+        <p style="font-size: 13px; color: var(--slate); line-height: 1.5;">Diese Woche kuratiert vom Estatio Studio Team. Darunter eine neue Logistik-Vorlage und drei MFH-Layouts.</p>
+      </div>
+      <a href="marketplace.html" class="btn btn-dark">Ansehen →</a>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

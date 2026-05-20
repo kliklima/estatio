@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anmelden · estatio.</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="auth-page">
+
+  <div class="auth-form-side">
+    <div class="auth-form-inner">
+      <a href="index.html" class="logo" style="display: block; margin-bottom: 48px;">estatio<span class="lime-dot">.</span></a>
+
+      <h1>Willkommen zurück<span class="lime-dot">.</span></h1>
+      <p class="sub">Melde dich an, um an deinen Exposés weiterzuarbeiten.</p>
+
+      <form onsubmit="event.preventDefault(); window.location='dashboard.html';">
+        <div class="field">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" placeholder="marco@maklerhaus.de" required />
+        </div>
+
+        <div class="field">
+          <label for="password">Passwort</label>
+          <input type="password" id="password" placeholder="••••••••" required />
+        </div>
+
+        <div class="field-row">
+          <label style="display: flex; gap: 6px; align-items: center; cursor: pointer;">
+            <input type="checkbox" style="margin: 0;" />
+            <span>Eingeloggt bleiben</span>
+          </label>
+          <a href="#">Passwort vergessen?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Anmelden →</button>
+      </form>
+
+      <div class="divider-or">oder</div>
+
+      <button class="social-btn">
+        <span style="font-weight: 600;">G</span>
+        Mit Google fortfahren
+      </button>
+      <button class="social-btn">
+        <span></span>
+        Mit Apple fortfahren
+      </button>
+
+      <div class="auth-foot">
+        Noch kein Account? <a href="signup.html">Kostenlos starten →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-side">
+    <div style="font-family: var(--serif); font-size: 22px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
+
+    <div>
+      <div style="font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--lime); margin-bottom: 18px;">Beta · 2.147 Nutzer</div>
+      <h2 class="auth-side-headline">
+        Vom leeren Blatt<br/>zum fertigen<br/>Teaser in unter<br/>10 Minuten<span class="lime-dot">.</span>
+      </h2>
+      <p class="auth-side-sub">
+        Estatio macht aus dem nervigsten Teil deines Verkaufs den schnellsten.
+      </p>
+    </div>
+
+    <div>
+      <div class="auth-quote">
+        "Ich habe vorher Tage in PowerPoint verloren. Jetzt mache ich ein Teaser in der Mittagspause — und es sieht besser aus."
+      </div>
+      <div class="auth-quote-meta">
+        Sarah K. · Asset Manager, München
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
