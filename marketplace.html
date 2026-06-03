@@ -3,19 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Marktplatz · estatio.</title>
+<title>Vorlagen-Bibliothek · estatio.</title>
+<meta name="description" content="Estatio strukturiert Vorlagen nach Output-Typ und Asset-Klasse — vom Teaser bis zum Investment Memorandum, von Multifamily bis Logistics." />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-marketplace">
 
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">estatio<span class="lime-dot">.</span></a>
     <div class="nav-links">
-      <a href="index.html">Produkt</a>
-      <a href="marketplace.html" class="active">Marktplatz</a>
+      <a href="index.html">Plattform</a>
+      <a href="marketplace.html" class="active">Vorlagen</a>
       <a href="pricing.html">Preise</a>
-      <a href="#">Vorlagen</a>
+      <a href="#">Über uns</a>
+      <a href="#">Docs</a>
     </div>
     <div class="nav-cta">
       <a href="login.html" class="btn btn-text">Anmelden</a>
@@ -24,202 +26,372 @@
   </div>
 </nav>
 
-<section class="marketplace-header">
+<section class="library-hero">
   <div class="container">
-    <div class="marketplace-headline-row">
-      <div>
-        <span class="eyebrow">Marktplatz</span>
-        <h1 class="display-lg" style="margin-top: 16px;">Vorlagen aus der<br/>Community<span class="lime-dot">.</span></h1>
+    <div class="library-hero-grid">
+      <div class="library-hero-content">
+        <span class="eyebrow eyebrow-lime">Vorlagen-Bibliothek</span>
+        <h1 class="library-hero-headline">Eine Bibliothek für jede Form der Immobilienvermarktung.</h1>
+        <p class="library-hero-sub">
+          Estatio strukturiert Vorlagen nach Output-Typ und Asset-Klasse. So findet jedes Team die passende Grundlage — vom Teaser bis zum Investment Memorandum, von Multifamily bis Logistics.
+        </p>
       </div>
-      <div style="text-align: right;">
-        <a href="login.html" class="btn btn-ghost">+ Eigene Vorlage einreichen</a>
-        <div style="font-size: 11px; color: var(--slate); margin-top: 10px;">Wird vom Team geprüft</div>
+
+      <div class="library-beta-card">
+        <div class="library-beta-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        </div>
+        <span class="library-beta-eyebrow">Beta-Status</span>
+        <h2 class="library-beta-title">Werden Sie Beta-Nutzer</h2>
+        <p class="library-beta-text">Die Bibliothek wird kontinuierlich aufgebaut. Beta-Nutzer erhalten neue Vorlagen als Erste — und können eigene Layouts einreichen.</p>
+        <a href="signup.html" class="btn btn-primary btn-sm">Beta-Zugang anfragen</a>
       </div>
     </div>
-    <p style="font-size: 16px; color: var(--slate); max-width: 580px; line-height: 1.6;">142 kuratierte Vorlagen von Maklern, Designern und Asset Managern. Jede Einreichung wird vor Veröffentlichung handgeprüft.</p>
   </div>
 </section>
 
-<section style="padding-bottom: 100px;">
+<section class="library-section library-section-output">
   <div class="container">
-    <div class="filter-bar">
-      <span class="filter-pill active">Alle · 142</span>
-      <span class="filter-pill">⭐ Estatio Studio · 20</span>
-      <span class="filter-pill">Mehrfamilienhaus</span>
-      <span class="filter-pill">Gewerbe</span>
-      <span class="filter-pill">Portfolio</span>
-      <span class="filter-pill">Mixed-Use</span>
-      <span class="filter-pill">ETW</span>
-      <span class="filter-pill">Einfamilienhaus</span>
-      <span class="filter-pill" style="margin-left: auto; color: var(--bronze); border-color: var(--bronze); background: rgba(139,107,61,0.08);">Neu diese Woche · 8</span>
+    <div class="library-section-header">
+      <span class="eyebrow">Struktur</span>
+      <h2 class="heading-md">Sieben Output-Typen für jede Vermarktungssituation<span class="accent-dot">.</span></h2>
     </div>
 
-    <div class="template-grid">
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: var(--ink); color: var(--paper);">
-          <div class="template-badge studio">⭐ Studio</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; color: var(--lime); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">MFH · Berlin</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Zinshaus<br/>Editorial.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; color: var(--lime); letter-spacing: -0.02em;">12,4 Mio €</div>
+    <article class="output-featured">
+      <div class="output-featured-main">
+        <div class="output-icon-box output-icon-box-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
         </div>
-        <div class="template-info">
-          <h4>Berliner Zinshaus</h4>
-          <div class="template-author">
-            <span class="author-avatar">ES</span>
-            <span>Estatio Studio · 2.142 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
+        <div class="output-featured-text">
+          <span class="output-featured-tag">Erste Vorlagen in Arbeit</span>
+          <h3 class="output-featured-title">Exposé</h3>
+          <p class="output-desc">Das klassische Vermarktungsdokument. Vollständige Objektdarstellung mit Lage, Bildern, Kennzahlen und Mieterstruktur — das Herzstück jeder professionellen Vermarktung.</p>
         </div>
-      </a>
+      </div>
+      <ul class="output-bullets output-bullets-featured">
+        <li>Vollständige Objektdarstellung</li>
+        <li>Lage- und Standortanalyse</li>
+        <li>Mieterstruktur und Cash-Flow</li>
+        <li>Bildergalerien</li>
+      </ul>
+    </article>
 
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: var(--cream); color: var(--ink);">
-          <div class="template-badge verified">geprüft</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span style="color: var(--bronze);">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; color: var(--bronze); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Gewerbe · München</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Office<br/>Magazine.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; letter-spacing: -0.02em;">38,5 Mio €</div>
+    <div class="output-grid">
+      <article class="output-card">
+        <span class="output-card-tag">In Vorbereitung</span>
+        <div class="output-icon-box output-icon-box-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 5H8"/></svg>
         </div>
-        <div class="template-info">
-          <h4>Class A Office</h4>
-          <div class="template-author">
-            <span class="author-avatar" style="background: var(--bronze);">SK</span>
-            <span>Sarah K. · 842 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
-        </div>
-      </a>
+        <h3 class="output-title">Teaser</h3>
+        <p class="output-desc">Kompakte Erstansprache für die Investorenkommunikation. Ein- bis zweiseitig, fokussiert auf Kennzahlen und Story.</p>
+        <p class="output-bullets-label">Was enthält das Format</p>
+        <ul class="output-bullets">
+          <li>Ein- bis zweiseitig</li>
+          <li>Highlight-Kennzahlen</li>
+          <li>Bildauswahl</li>
+        </ul>
+      </article>
 
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: var(--terracotta); color: var(--paper);">
-          <div class="template-badge new">neu</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span style="color: var(--ink);">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; opacity: 0.85; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Portfolio · Süd</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Bold<br/>Portfolio.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; letter-spacing: -0.02em;">86,5 Mio €</div>
+      <article class="output-card">
+        <span class="output-card-tag">In Vorbereitung</span>
+        <div class="output-icon-box output-icon-box-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
         </div>
-        <div class="template-info">
-          <h4>Multi-Asset Portfolio</h4>
-          <div class="template-author">
-            <span class="author-avatar" style="background: var(--slate);">JF</span>
-            <span>Jan F. · 24 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
-        </div>
-      </a>
+        <h3 class="output-title">Investment Memorandum</h3>
+        <p class="output-desc">Tiefgehende Investment-Unterlage für institutionelle Käufer. Marktanalyse, Cash-Flow-Modell, Risikoprofil und Exit-Szenarien.</p>
+        <p class="output-bullets-label">Was enthält das Format</p>
+        <ul class="output-bullets">
+          <li>Marktanalyse</li>
+          <li>Cash-Flow-Modell</li>
+          <li>Risikoprofil</li>
+          <li>Exit-Szenarien</li>
+        </ul>
+      </article>
 
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: var(--paper); color: var(--ink); border-bottom: 0.5px solid var(--border);">
-          <div class="template-badge studio">⭐ Studio</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; color: var(--slate); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">ETW · München</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Penthouse<br/>Pure.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; letter-spacing: -0.02em;">4,2 Mio €</div>
+      <article class="output-card">
+        <span class="output-card-tag">In Vorbereitung</span>
+        <div class="output-icon-box output-icon-box-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
         </div>
-        <div class="template-info">
-          <h4>Luxus-ETW</h4>
-          <div class="template-author">
-            <span class="author-avatar">ES</span>
-            <span>Estatio Studio · 3.412 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
-        </div>
-      </a>
+        <h3 class="output-title">Portfolio-Präsentation</h3>
+        <p class="output-desc">Mehrere Objekte in einer Unterlage. Mit Portfolio-Übersicht, Einzeldarstellungen und konsolidierten Kennzahlen.</p>
+        <p class="output-bullets-label">Was enthält das Format</p>
+        <ul class="output-bullets">
+          <li>Portfolio-Übersicht</li>
+          <li>Einzeldarstellungen</li>
+          <li>Konsolidierte KPIs</li>
+        </ul>
+      </article>
 
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: var(--lime); color: var(--ink);">
-          <div class="template-badge" style="background: var(--ink); color: var(--paper);">trending</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span style="color: var(--ink);">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; color: rgba(26,23,20,0.65); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Mixed-Use · Hamburg</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Quartier<br/>Brutalist.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; letter-spacing: -0.02em;">124,0 Mio €</div>
+      <article class="output-card">
+        <span class="output-card-tag">In Vorbereitung</span>
+        <div class="output-icon-box output-icon-box-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98"/><path d="M15.41 6.51l-6.82 3.98"/></svg>
         </div>
-        <div class="template-info">
-          <h4>Quartier-Entwicklung</h4>
-          <div class="template-author">
-            <span class="author-avatar" style="background: var(--lime); color: var(--ink);">LM</span>
-            <span>Lukas M. · 412 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
-        </div>
-      </a>
+        <h3 class="output-title">Social Media Assets</h3>
+        <p class="output-desc">Quadrat- und Story-Formate für LinkedIn, Instagram und Newsletter. Mit konsistentem Branding.</p>
+        <p class="output-bullets-label">Was enthält das Format</p>
+        <ul class="output-bullets">
+          <li>Quadrat-Format</li>
+          <li>Story-Format</li>
+          <li>LinkedIn-Banner</li>
+          <li>Newsletter-Header</li>
+        </ul>
+      </article>
 
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: #4A5D4F; color: var(--paper);">
-          <div class="template-badge verified">geprüft</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; color: var(--lime); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">EFH · Hamburg</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Villa<br/>Heritage.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; letter-spacing: -0.02em;">2,8 Mio €</div>
+      <article class="output-card">
+        <span class="output-card-tag">In Vorbereitung</span>
+        <div class="output-icon-box output-icon-box-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="M7 16v5"/><path d="M12 16v5"/><path d="M17 16v5"/></svg>
         </div>
-        <div class="template-info">
-          <h4>Architekten-Villa</h4>
-          <div class="template-author">
-            <span class="author-avatar">AR</span>
-            <span>Anna R. · 156 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
-        </div>
-      </a>
+        <h3 class="output-title">Verkäuferpräsentation</h3>
+        <p class="output-desc">Pitch-Unterlage für die Mandatsgewinnung. Marktposition, Vergleichsobjekte und Vermarktungsstrategie.</p>
+        <p class="output-bullets-label">Was enthält das Format</p>
+        <ul class="output-bullets">
+          <li>Marktposition</li>
+          <li>Vergleichsobjekte</li>
+          <li>Vermarktungsstrategie</li>
+        </ul>
+      </article>
 
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: var(--bronze); color: var(--paper);">
-          <div class="template-badge studio">⭐ Studio</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; color: var(--lime); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Wohnportfolio · NRW</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Ruhrgebiet<br/>Portfolio.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; letter-spacing: -0.02em;">54,2 Mio €</div>
+      <article class="output-card">
+        <span class="output-card-tag">In Vorbereitung</span>
+        <div class="output-icon-box output-icon-box-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
         </div>
-        <div class="template-info">
-          <h4>Wohn-Portfolio NRW</h4>
-          <div class="template-author">
-            <span class="author-avatar">ES</span>
-            <span>Estatio Studio · 1.024 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
-        </div>
-      </a>
+        <h3 class="output-title">Objektpräsentation</h3>
+        <p class="output-desc">Detaillierte Einzeldarstellung für Besichtigungstermine und Kundengespräche.</p>
+        <p class="output-bullets-label">Was enthält das Format</p>
+        <ul class="output-bullets">
+          <li>Detailansichten</li>
+          <li>Grundrisse</li>
+          <li>Lage-Information</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
 
-      <a href="signup.html" class="template-card">
-        <div class="template-preview" style="background: #2C3E50; color: var(--paper);">
-          <div class="template-badge verified">geprüft</div>
-          <div style="font-family: var(--serif); font-size: 14px; letter-spacing: -0.04em;">estatio<span class="lime-dot">.</span></div>
-          <div style="margin-top: 40px;">
-            <div style="font-size: 9px; color: var(--lime); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Logistik · Leipzig</div>
-            <div style="font-family: var(--serif); font-size: 22px; line-height: 0.96; letter-spacing: -0.025em;">Logistics<br/>Hub.</div>
-          </div>
-          <div style="position: absolute; bottom: 16px; left: 20px; font-family: var(--serif); font-size: 18px; letter-spacing: -0.02em;">22,4 Mio €</div>
-        </div>
-        <div class="template-info">
-          <h4>Logistik-Immobilie</h4>
-          <div class="template-author">
-            <span class="author-avatar" style="background: #2C3E50;">TW</span>
-            <span>Thomas W. · 312 Nutzungen</span>
-          </div>
-          <div class="template-action">Vorlage übernehmen</div>
-        </div>
-      </a>
+<section class="library-section library-section-coverage">
+  <div class="container">
+    <div class="library-section-header library-section-header-coverage">
+      <span class="eyebrow eyebrow-lime">Abdeckung</span>
+      <h2 class="heading-md">Strukturiert nach institutioneller Asset-Logik<span class="accent-dot">.</span></h2>
+      <p class="section-sub">Zehn Asset-Klassen in drei Hauptkategorien. Jede mit eigener Bewertungs- und Darstellungslogik.</p>
+    </div>
 
-      <div class="template-card" style="background: var(--cream); border-style: dashed; padding: 24px; display: flex; flex-direction: column; justify-content: center;">
-        <div style="font-size: 10px; color: var(--bronze); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 500;">Teile deine Vorlage</div>
-        <h4 style="font-family: var(--serif); font-size: 20px; line-height: 1.1; letter-spacing: -0.02em; font-weight: 400; margin-bottom: 12px;">Andere nutzen sie. Du bekommst Sichtbarkeit<span class="lime-dot">.</span></h4>
-        <p style="font-size: 13px; color: var(--slate); line-height: 1.55; margin-bottom: 18px;">Wir prüfen jede Einreichung. Studio-Status bei Top-Vorlagen.</p>
-        <a href="login.html" class="btn btn-dark" style="font-size: 11px; padding: 9px 16px; align-self: flex-start;">Vorlage einreichen →</a>
+    <div class="coverage-matrix">
+      <div class="coverage-col">
+        <span class="coverage-col-eyebrow">01 — Wohnen</span>
+        <h3 class="coverage-col-title">Wohnimmobilien</h3>
+        <p class="coverage-col-sub">Privat bis institutionell</p>
+        <ul class="coverage-col-list">
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Mehrfamilienhaus</span>
+            <span class="coverage-col-item-sub">Multifamily</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l3-3h4l3 3v14"/><path d="M9 21v-4h6v4"/><path d="M10 9h4"/><path d="M12 7v2"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Wohn- und Geschäftshaus</span>
+            <span class="coverage-col-item-sub">Mixed-Use Residential</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h7"/><path d="M14 21h7"/><path d="M5 21V7l3-3h4l3 3v14"/><path d="M14 21V7l3-3h4l3 3v14"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Reihenhaus</span>
+            <span class="coverage-col-item-sub">Townhouse</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7"/><path d="M5 10v11"/><path d="M19 10v11"/><path d="M9 21v-5h6v5"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Einfamilienhaus</span>
+            <span class="coverage-col-item-sub">Single Family</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Eigentumswohnung</span>
+            <span class="coverage-col-item-sub">Condo</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6"/><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5"/><path d="M18 12v5"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Studentisches Wohnen</span>
+            <span class="coverage-col-item-sub">Student Housing</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Premium Residential</span>
+            <span class="coverage-col-item-sub">Luxury</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="coverage-col">
+        <span class="coverage-col-eyebrow">02 — Gewerbe</span>
+        <h3 class="coverage-col-title">Gewerbeimmobilien</h3>
+        <p class="coverage-col-sub">Vier Säulen, zwei Spezialklassen</p>
+        <ul class="coverage-col-list">
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Office</span>
+            <span class="coverage-col-item-sub">Büroflächen</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Retail</span>
+            <span class="coverage-col-item-sub">Einzelhandel</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 9.4l-9-5.19"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Industrial &amp; Logistics</span>
+            <span class="coverage-col-item-sub">Logistik</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Hospitality</span>
+            <span class="coverage-col-item-sub">Hotel</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2"/><path d="M5 8h14"/><path d="M6 8v12a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V8"/><path d="M10 12h4"/><path d="M12 10v4"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Healthcare</span>
+            <span class="coverage-col-item-sub">Medizinische Immobilien</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M6 21h12"/><path d="M12 17v4"/><path d="M7 8h.01"/><path d="M12 8h.01"/><path d="M17 8h.01"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Data Center</span>
+            <span class="coverage-col-item-sub">Rechenzentrum</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="coverage-col">
+        <span class="coverage-col-eyebrow">03 — Spezial</span>
+        <h3 class="coverage-col-title">Spezial-Konstellationen</h3>
+        <p class="coverage-col-sub">Komplex, entwickelt, gebündelt</p>
+        <ul class="coverage-col-list">
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Mixed Use</span>
+            <span class="coverage-col-item-sub">Mehrnutzungskomplex</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Development</span>
+            <span class="coverage-col-item-sub">Projektentwicklung</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="14" height="14" rx="2"/><path d="M12 6h4"/><path d="M12 10h4"/><path d="M12 14h4"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Portfolio Sales</span>
+            <span class="coverage-col-item-sub">Paketverkauf</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5v4"/><path d="M9 8h2"/><path d="M15 8h2"/><path d="M12 17v4"/><path d="M9 20h6"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Pflegeimmobilien</span>
+            <span class="coverage-col-item-sub">Senior Care</span>
+          </li>
+          <li class="coverage-col-item">
+            <span class="coverage-col-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+            </span>
+            <span class="coverage-col-item-name">Grundstücke</span>
+            <span class="coverage-col-item-sub">Land</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="coverage-footnote">
+      <svg class="coverage-footnote-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+      Estatio kennt die KPIs pro Klasse — von Faktor und WALT bis RevPAR und Cash-Flow-Modell.
+    </p>
+  </div>
+</section>
+
+<section class="library-section library-section-community">
+  <div class="container">
+    <div class="library-community-grid">
+      <div class="library-community-content">
+        <span class="eyebrow">Community</span>
+        <h2 class="heading-md">Eigene Vorlagen einreichen — handgeprüft veröffentlichen<span class="accent-dot">.</span></h2>
+        <p class="library-community-text">Maklerhäuser, Designer und Asset Manager können eigene Vorlagen einreichen. Das Estatio-Team prüft jede Einreichung manuell. Hochwertige Layouts erhalten den Studio-Status — sichtbar für die gesamte Community.</p>
+        <a href="signup.html" class="btn btn-ghost">Vorlage einreichen</a>
+      </div>
+
+      <div class="community-process-card">
+        <ol class="community-process">
+          <li class="community-process-step">
+            <div class="community-process-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div>
+              <span class="community-process-num">Schritt 1</span>
+              <span class="community-process-label">Einreichen</span>
+            </div>
+          </li>
+          <li class="community-process-step">
+            <div class="community-process-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <div>
+              <span class="community-process-num">Schritt 2</span>
+              <span class="community-process-label">Prüfung durch Estatio-Team</span>
+            </div>
+          </li>
+          <li class="community-process-step">
+            <div class="community-process-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <span class="community-process-num">Schritt 3</span>
+              <span class="community-process-label">Veröffentlichung mit Studio-Status</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="library-cta-wrap">
+  <div class="container">
+    <div class="cta-band-marketplace-accent">
+      <h2 class="cta-band-marketplace-title">Beta-Zugang sichern und die ersten Vorlagen als Erste nutzen<span class="accent-dot">.</span></h2>
+      <p class="cta-band-marketplace-sub">Estatio ist in der Private Beta. Beta-Nutzer erhalten neue Vorlagen als Erste, können Wünsche einreichen und prägen die Entwicklung mit.</p>
+      <div class="cta-actions cta-actions-center">
+        <a href="signup.html" class="btn btn-primary">Kostenlos starten</a>
+        <a href="index.html" class="btn btn-ghost">Mehr über die Plattform</a>
       </div>
     </div>
   </div>
@@ -230,7 +402,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">estatio<span class="lime-dot">.</span></a>
-        <p class="footer-tag">Exposés, die nicht weggeklickt werden.</p>
+        <p class="footer-tag">Die zentrale Plattform für professionelle Immobilienvermarktung.</p>
       </div>
       <div>
         <h5>Produkt</h5>
@@ -238,6 +410,7 @@
           <li><a href="marketplace.html">Marktplatz</a></li>
           <li><a href="pricing.html">Preise</a></li>
           <li><a href="#">Vorlagen</a></li>
+          <li><a href="#">Updates</a></li>
         </ul>
       </div>
       <div>
@@ -245,13 +418,17 @@
         <ul>
           <li><a href="#">Hilfe-Center</a></li>
           <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">API-Docs</a></li>
         </ul>
       </div>
       <div>
         <h5>Unternehmen</h5>
         <ul>
           <li><a href="#">Über uns</a></li>
+          <li><a href="#">Kontakt</a></li>
           <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
         </ul>
       </div>
     </div>
