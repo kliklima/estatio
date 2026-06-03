@@ -4,18 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Preise · estatio.</title>
+<meta name="description" content="Estatio Preise: Starter, Team und Enterprise. Monatlich oder jährlich — während der Private Beta kostenlos nutzen." />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-pricing">
 
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">estatio<span class="lime-dot">.</span></a>
     <div class="nav-links">
-      <a href="index.html">Produkt</a>
-      <a href="marketplace.html">Marktplatz</a>
+      <a href="index.html">Plattform</a>
+      <a href="marketplace.html">Vorlagen</a>
       <a href="pricing.html" class="active">Preise</a>
-      <a href="#">Vorlagen</a>
+      <a href="#">Über uns</a>
+      <a href="#">Docs</a>
     </div>
     <div class="nav-cta">
       <a href="login.html" class="btn btn-text">Anmelden</a>
@@ -24,83 +26,191 @@
   </div>
 </nav>
 
-<section class="section">
+<section class="pricing-hero-section">
   <div class="container">
     <div class="pricing-hero">
-      <span class="eyebrow">Preise</span>
-      <h1 class="display-lg" style="margin-top: 16px;">Während der Beta<br/>komplett kostenlos<span class="lime-dot">.</span></h1>
-      <p style="font-size: 16px; color: var(--slate); line-height: 1.6; margin-top: 22px; max-width: 540px; margin-left: auto; margin-right: auto;">
-        Wir bauen Estatio mit dir. Solange wir in der Beta sind, hast du vollen Zugang ohne Kreditkarte. Die finalen Preise gelten erst, wenn du sie kennst.
-      </p>
+      <span class="eyebrow eyebrow-lime">Preise</span>
+      <h1 class="pricing-hero-headline">Konditionen, die zu Ihrem Team passen.</h1>
+      <p class="pricing-hero-sub">Drei Stufen, volle Flexibilität. Monatlich oder jährlich, mit Volumenrabatt im Jahresabo.</p>
     </div>
+  </div>
+</section>
 
-    <div class="pricing-toggle-wrap">
-      <div class="pricing-toggle">
-        <span class="pricing-toggle-option active">Monatlich</span>
-        <span class="pricing-toggle-option">Jährlich <span class="pricing-toggle-save">— 20% sparen</span></span>
+<section class="pricing-main-section">
+  <div class="container">
+
+    <div class="pricing-beta-banner">
+      <div class="pricing-beta-banner-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
       </div>
-    </div>
-
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <div class="pricing-name">Free</div>
-        <div class="price-label">Zum Ausprobieren</div>
-        <div class="price-amount">0 €</div>
-        <div class="price-period">während der Beta</div>
-        <a href="signup.html" class="btn btn-ghost btn-full">Kostenlos starten</a>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li><span class="check"></span> Drei aktive Exposés</li>
-          <li><span class="check"></span> 20 Studio-Vorlagen</li>
-          <li><span class="check"></span> PDF-Export mit Wasserzeichen</li>
-          <li><span class="check"></span> Web-Link teilen</li>
-          <li><span class="check"></span> Standardfarben</li>
-        </ul>
-      </div>
-
-      <div class="pricing-card featured">
-        <div class="pricing-tag">Empfohlen</div>
-        <div class="pricing-name">Pro</div>
-        <div class="price-label">Für aktive Makler</div>
-        <div class="price-amount">49 €</div>
-        <div class="price-period">pro Monat — später</div>
-        <a href="signup.html" class="btn btn-dark btn-full">Kostenlos starten</a>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li><span class="check"></span> Unbegrenzte Exposés</li>
-          <li><span class="check"></span> Vollständiger Marktplatz · 142+ Vorlagen</li>
-          <li><span class="check"></span> Eigenes Marken-Kit (Logo, Farben, Schrift)</li>
-          <li><span class="check"></span> Alle Asset-Klassen</li>
-          <li><span class="check"></span> PDF-Export ohne Wasserzeichen</li>
-          <li><span class="check"></span> KI-Texte und Übersetzungen</li>
-          <li><span class="check"></span> CRM-Anbindung</li>
-        </ul>
-      </div>
-
-      <div class="pricing-card">
-        <div class="pricing-name">Agency</div>
-        <div class="price-label">Für Teams und Maklerhäuser</div>
-        <div class="price-amount">149 €</div>
-        <div class="price-period">pro Monat — später</div>
-        <a href="signup.html" class="btn btn-ghost btn-full">Vertrieb kontaktieren</a>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li><span class="check"></span> Alles in Pro</li>
-          <li><span class="check"></span> Bis zu zehn Team-Mitglieder</li>
-          <li><span class="check"></span> Multi-Brand Workspaces</li>
-          <li><span class="check"></span> Eigene Custom-Vorlagen</li>
-          <li><span class="check"></span> White-Label PDF</li>
-          <li><span class="check"></span> Eigene Subdomain</li>
-          <li><span class="check"></span> Persönlicher Onboarding-Manager</li>
-        </ul>
+      <div class="pricing-beta-banner-content">
+        <span class="eyebrow eyebrow-lime">Private Beta</span>
+        <p class="pricing-beta-banner-text">Während der Private Beta nutzen Sie Estatio kostenlos. Die unten gezeigten Preise gelten ab dem öffentlichen Launch. Beta-Nutzer erhalten 50% Rabatt im ersten Jahr nach dem Launch.</p>
+        <a href="signup.html" class="btn btn-primary">Beta-Zugang anfragen</a>
       </div>
     </div>
 
-    <div class="pricing-footer">
-      <span class="eyebrow">Häufig gefragt</span>
-      <p class="pricing-footer-text">
-        Was passiert nach der Beta? Wir kündigen das Ende mindestens 30 Tage vorher an. Du behältst alle erstellten Exposés und kannst entscheiden, ob du upgraden willst — ohne Druck.
-      </p>
+    <div class="billing-switch-wrap">
+      <div class="billing-switch" role="group" aria-label="Abrechnungszeitraum">
+        <button type="button" class="billing-switch-option is-active" data-period="monthly">Monatlich</button>
+        <button type="button" class="billing-switch-option" data-period="annual">
+          Jährlich
+          <span class="billing-switch-badge">2 Monate gratis</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="pricing-tier-grid">
+      <article class="pricing-tier-card">
+        <h2 class="pricing-tier-name">Starter</h2>
+        <p class="pricing-tier-desc">Für einzelne Makler und freelance Asset Manager</p>
+        <div class="pricing-tier-price-block">
+          <div class="pricing-tier-price" data-monthly="79 €" data-annual="66 €">79 €</div>
+          <div class="pricing-tier-price-sub">pro Nutzer/Monat</div>
+          <div class="pricing-tier-price-note" data-monthly="monatlich kündbar" data-annual="jährlich abgerechnet">monatlich kündbar</div>
+        </div>
+        <a href="signup.html" class="btn btn-ghost btn-full pricing-tier-cta">Beta-Zugang anfragen</a>
+        <div class="pricing-tier-divider"></div>
+        <ul class="pricing-tier-features">
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1 Nutzer</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1 Brand-Kit</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Alle 18 Asset-Klassen</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Alle 7 Vorlagen-Familien</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Unbegrenzte Dokumente</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>PDF + Web-Link Export</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Editor mit voller Kontrolle</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>E-Mail-Support</li>
+        </ul>
+      </article>
+
+      <article class="pricing-tier-card pricing-tier-card-featured">
+        <span class="pricing-tier-badge">Empfohlen</span>
+        <h2 class="pricing-tier-name">Team</h2>
+        <p class="pricing-tier-desc">Für Maklerhäuser und Asset-Management-Teams</p>
+        <div class="pricing-tier-price-block">
+          <div class="pricing-tier-price" data-monthly="249 €" data-annual="208 €">249 €</div>
+          <div class="pricing-tier-price-sub">pro Monat, 5 Nutzer inklusive</div>
+          <div class="pricing-tier-price-meta">zusätzliche Nutzer 39 €/Monat</div>
+          <div class="pricing-tier-price-note" data-monthly="monatlich kündbar" data-annual="jährlich abgerechnet">monatlich kündbar</div>
+        </div>
+        <a href="signup.html" class="btn btn-primary btn-full pricing-tier-cta">Beta-Zugang anfragen</a>
+        <div class="pricing-tier-divider"></div>
+        <ul class="pricing-tier-features">
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>5 Nutzer inklusive</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Bis zu 3 Brand-Kits</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Alles aus Starter</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Team-Kommentare und Freigaben</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Versionierung mit Verlauf</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Vorlagen-Einreichung (Studio-Status möglich)</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Priorität-Support</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Onboarding-Session (60 Min.)</li>
+        </ul>
+      </article>
+
+      <article class="pricing-tier-card">
+        <h2 class="pricing-tier-name">Enterprise</h2>
+        <p class="pricing-tier-desc">Für institutionelle Häuser ab 15 Nutzern</p>
+        <div class="pricing-tier-price-block">
+          <div class="pricing-tier-price pricing-tier-price-custom">Auf Anfrage</div>
+          <div class="pricing-tier-price-sub">Volumen-Lizenz und SLA</div>
+          <div class="pricing-tier-price-note">individuelles Onboarding inklusive</div>
+        </div>
+        <a href="#" class="btn btn-ghost btn-full pricing-tier-cta">Kontakt aufnehmen</a>
+        <div class="pricing-tier-divider"></div>
+        <ul class="pricing-tier-features">
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Unbegrenzte Nutzer</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Unbegrenzte Brand-Kits</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Alles aus Team</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Custom-Vorlagen-Entwicklung</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>SSO / SAML</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>API-Zugang</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Dedicated Customer Success</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>SLA (99,9% Uptime)</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Quartalsweise Review-Calls</li>
+          <li><svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Volumen-Rabatte</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="pricing-vat-note">Alle Preise zzgl. gesetzlicher Mehrwertsteuer. Preisangaben in Euro.</p>
+  </div>
+</section>
+
+<section class="pricing-faq-section">
+  <div class="container">
+    <div class="pricing-faq-header">
+      <span class="eyebrow">Häufige Fragen</span>
+      <h2 class="pricing-faq-headline">Antworten auf das Wesentliche.</h2>
+    </div>
+
+    <div class="pricing-faq-list">
+      <div class="pricing-faq-item">
+        <button type="button" class="pricing-faq-question" aria-expanded="false">
+          <span>Was passiert nach der Beta-Phase?</span>
+          <svg class="pricing-faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        </button>
+        <div class="pricing-faq-answer">
+          <p>Beta-Nutzer erhalten 50% Rabatt auf das erste Jahr nach dem öffentlichen Launch. Ihre Daten, Brand-Kits und erstellten Dokumente bleiben ohne Unterbrechung verfügbar.</p>
+        </div>
+      </div>
+      <div class="pricing-faq-item">
+        <button type="button" class="pricing-faq-question" aria-expanded="false">
+          <span>Kann ich jederzeit kündigen?</span>
+          <svg class="pricing-faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        </button>
+        <div class="pricing-faq-answer">
+          <p>Ja. Monatliche Abos sind monatlich kündbar zum Monatsende. Jahresabos haben eine Mindestlaufzeit von 12 Monaten und sind danach jederzeit zum Vertragsende mit 30 Tagen Vorlauf kündbar.</p>
+        </div>
+      </div>
+      <div class="pricing-faq-item">
+        <button type="button" class="pricing-faq-question" aria-expanded="false">
+          <span>Wie funktionieren Brand-Kits im Team-Tarif?</span>
+          <svg class="pricing-faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        </button>
+        <div class="pricing-faq-answer">
+          <p>Sie können bis zu drei separate Brand-Kits anlegen — beispielsweise für Ihre Hauptmarke, ein Sub-Brand und White-Label-Mandate. Jeder Nutzer wählt beim Erstellen eines Dokuments das passende Brand-Kit.</p>
+        </div>
+      </div>
+      <div class="pricing-faq-item">
+        <button type="button" class="pricing-faq-question" aria-expanded="false">
+          <span>Was bedeutet „Custom-Vorlagen“ im Enterprise-Tarif?</span>
+          <svg class="pricing-faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        </button>
+        <div class="pricing-faq-answer">
+          <p>Unser Design-Team entwickelt exklusive Vorlagen für Ihre spezifischen Asset-Klassen und Output-Typen. Im Onboarding definieren wir gemeinsam den Bedarf, anschließend werden die Vorlagen designt, abgestimmt und in Ihrem Brand-Kit hinterlegt.</p>
+        </div>
+      </div>
+      <div class="pricing-faq-item">
+        <button type="button" class="pricing-faq-question" aria-expanded="false">
+          <span>Bekomme ich eine kostenlose Testphase?</span>
+          <svg class="pricing-faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        </button>
+        <div class="pricing-faq-answer">
+          <p>Während der Private Beta nutzen Sie Estatio vollständig kostenlos. Nach dem öffentlichen Launch bieten wir eine 14-tägige kostenlose Testphase für Starter und Team.</p>
+        </div>
+      </div>
+      <div class="pricing-faq-item">
+        <button type="button" class="pricing-faq-question" aria-expanded="false">
+          <span>Bekomme ich Rechnungen mit ausgewiesener Mehrwertsteuer?</span>
+          <svg class="pricing-faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        </button>
+        <div class="pricing-faq-answer">
+          <p>Ja. Sie erhalten standardmäßig Rechnungen mit ausgewiesener Mehrwertsteuer (19%) für deutsche Geschäftskunden. Für EU-Geschäftskunden mit gültiger USt-IdNr. ist Reverse-Charge möglich.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-cta-section">
+  <div class="container">
+    <div class="pricing-cta-band">
+      <h2 class="pricing-cta-headline">Beta-Zugang sichern, Preisvorteil als Erster nutzen.</h2>
+      <p class="pricing-cta-sub">Beta-Nutzer profitieren vom 50%-Rabatt im ersten Jahr und prägen die Entwicklung mit.</p>
+      <div class="cta-actions cta-actions-center">
+        <a href="signup.html" class="btn btn-primary">Beta-Zugang anfragen</a>
+        <a href="#" class="btn btn-ghost">Demo vereinbaren</a>
+      </div>
     </div>
   </div>
 </section>
@@ -110,7 +220,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">estatio<span class="lime-dot">.</span></a>
-        <p class="footer-tag">Exposés, die nicht weggeklickt werden.</p>
+        <p class="footer-tag">Die zentrale Plattform für professionelle Immobilienvermarktung.</p>
       </div>
       <div>
         <h5>Produkt</h5>
@@ -118,6 +228,7 @@
           <li><a href="marketplace.html">Marktplatz</a></li>
           <li><a href="pricing.html">Preise</a></li>
           <li><a href="#">Vorlagen</a></li>
+          <li><a href="#">Updates</a></li>
         </ul>
       </div>
       <div>
@@ -125,13 +236,17 @@
         <ul>
           <li><a href="#">Hilfe-Center</a></li>
           <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">API-Docs</a></li>
         </ul>
       </div>
       <div>
         <h5>Unternehmen</h5>
         <ul>
           <li><a href="#">Über uns</a></li>
+          <li><a href="#">Kontakt</a></li>
           <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
         </ul>
       </div>
     </div>
@@ -141,6 +256,47 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var billingButtons = document.querySelectorAll('.billing-switch-option[data-period]');
+  var priceEls = document.querySelectorAll('.pricing-tier-price[data-monthly][data-annual]');
+  var noteEls = document.querySelectorAll('.pricing-tier-price-note[data-monthly][data-annual]');
+
+  function setBilling(period) {
+    billingButtons.forEach(function (btn) {
+      btn.classList.toggle('is-active', btn.getAttribute('data-period') === period);
+    });
+    priceEls.forEach(function (el) {
+      el.textContent = period === 'monthly' ? el.getAttribute('data-monthly') : el.getAttribute('data-annual');
+    });
+    noteEls.forEach(function (el) {
+      el.textContent = period === 'monthly' ? el.getAttribute('data-monthly') : el.getAttribute('data-annual');
+    });
+  }
+
+  billingButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      setBilling(btn.getAttribute('data-period'));
+    });
+  });
+
+  document.querySelectorAll('.pricing-faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.pricing-faq-item');
+      var isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.pricing-faq-item.is-open').forEach(function (openItem) {
+        openItem.classList.remove('is-open');
+        openItem.querySelector('.pricing-faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
