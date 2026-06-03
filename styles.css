@@ -274,17 +274,17 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .hero-headline {
   font-family: var(--sans);
-  font-size: clamp(28px, 3.5vw, 34px);
-  line-height: 1.15;
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.2;
   letter-spacing: -0.025em;
   font-weight: 500;
   color: var(--ink);
   margin-bottom: 18px;
-  max-width: 480px;
+  max-width: 520px;
 }
 
 .hero-sub {
-  max-width: 480px;
+  max-width: 520px;
   font-size: 15px;
   line-height: 1.6;
   color: var(--slate);
@@ -417,24 +417,32 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .hero-preview-value-factor { color: var(--lime-dark); }
 
-/* ===== Logo bar ===== */
+/* ===== Quality strip ===== */
 
-.logo-bar {
-  padding: 28px 0;
+.quality-strip {
+  padding: 48px 0;
   background: var(--bg-soft);
   border-bottom: 0.5px solid var(--border);
 }
 
-.logo-bar-text {
+.quality-strip-inner {
   text-align: center;
-  font-size: 13px;
-  color: var(--mute);
-  line-height: 1.5;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
-.logo-bar-text strong {
-  color: var(--slate);
+.eyebrow-lime {
+  color: var(--lime-dark);
+}
+
+.quality-headline {
+  font-family: var(--sans);
+  font-size: clamp(22px, 2.5vw, 26px);
   font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-top: 12px;
 }
 
 /* ===== Showcase ===== */
@@ -810,6 +818,11 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .steps-index { margin-top: 0; }
 
+.steps-four {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
 .step { padding: 0; }
 
 .step-num {
@@ -847,19 +860,34 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 }
 
 .asset-pill {
-  padding: 8px 16px;
-  border-radius: var(--r-pill);
+  padding: 10px 16px;
+  border-radius: var(--r-md);
   background: var(--bg);
   border: 0.5px solid var(--border);
   font-size: 13px;
   color: var(--ink);
   display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
   transition: border-color 0.15s;
 }
 
 .asset-pill:hover { border-color: var(--border-strong); }
+
+.asset-pill-main {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.asset-pill-sub {
+  font-size: 10px;
+  color: var(--mute);
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
 
 .asset-pill .count {
   font-size: 11px;
@@ -1778,6 +1806,10 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 /* ===== Responsive ===== */
 
+@media (max-width: 1100px) {
+  .steps-four { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 1000px) {
   .container { padding: 0 20px; }
   .nav-inner {
@@ -1793,6 +1825,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
   .showcase { grid-template-columns: 1fr; }
   .features { grid-template-columns: 1fr; }
+  .steps-four { grid-template-columns: 1fr; gap: 36px; }
   .steps { grid-template-columns: 1fr; gap: 36px; }
   .cta-band { grid-template-columns: 1fr; padding: 40px 28px; gap: 28px; margin-bottom: 60px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
