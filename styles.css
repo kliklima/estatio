@@ -186,7 +186,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 9px 16px;
+  padding: 10px 18px;
   border-radius: var(--r-sm);
   font-size: 13px;
   font-weight: 500;
@@ -215,8 +215,8 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   color: var(--ink);
 }
 .btn-ghost:hover {
-  background: var(--bg-soft);
-  border-color: var(--slate);
+  background: transparent;
+  border-color: var(--ink);
 }
 
 .btn-text {
@@ -236,6 +236,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 .hero {
   padding: 72px 0 80px;
   border-bottom: 0.5px solid var(--border);
+  background: var(--bg);
 }
 
 .hero-grid {
@@ -315,9 +316,9 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   width: 100%;
   max-width: 440px;
   border: 0.5px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: 10px;
   overflow: hidden;
-  background: var(--bg);
+  background: var(--bg-soft);
 }
 
 .hero-preview-chrome {
@@ -325,7 +326,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   align-items: center;
   gap: 6px;
   padding: 10px 14px;
-  background: var(--bg-soft);
+  background: var(--bg);
   border-bottom: 0.5px solid var(--border);
 }
 
@@ -338,16 +339,17 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .hero-preview-url {
   margin-left: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 11px;
   color: var(--mute);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 .hero-preview-body {
   padding: 28px 24px 24px;
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--bg-soft);
+  color: var(--ink);
   min-height: 320px;
   display: flex;
   flex-direction: column;
@@ -358,13 +360,14 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   font-weight: 600;
   letter-spacing: -0.03em;
   margin-bottom: 36px;
+  color: var(--ink);
 }
 
 .hero-preview-eyebrow {
   font-size: 9px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--lime);
+  color: var(--lime-dark);
   margin-bottom: 10px;
   font-weight: 500;
 }
@@ -375,18 +378,19 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   letter-spacing: -0.02em;
   font-weight: 500;
   margin-bottom: 12px;
+  color: var(--ink);
 }
 
 .hero-preview-meta {
   font-size: 11px;
   line-height: 1.55;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--slate);
 }
 
 .hero-preview-footer {
   margin-top: auto;
   padding-top: 16px;
-  border-top: 0.5px solid rgba(255, 255, 255, 0.12);
+  border-top: 0.5px solid var(--border);
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -398,7 +402,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   font-size: 9px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--mute);
   margin-bottom: 4px;
   font-weight: 500;
 }
@@ -408,9 +412,10 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   letter-spacing: -0.02em;
   font-weight: 500;
   line-height: 1;
+  color: var(--ink);
 }
 
-.hero-preview-value-accent { color: var(--lime); }
+.hero-preview-value-factor { color: var(--lime-dark); }
 
 /* ===== Logo bar ===== */
 
@@ -436,6 +441,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .section-showcase {
   padding-top: 0;
+  background: var(--bg);
 }
 
 .showcase-wrapper {
@@ -447,6 +453,97 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   align-items: stretch;
+}
+
+.section-showcase .expo-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-soft);
+  border: 0.5px solid var(--border);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section-showcase .expo-preview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+
+.section-showcase .expo-mini-logo {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: -0.03em;
+  margin-bottom: 36px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.section-showcase .expo-eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--lime-dark);
+}
+
+.section-showcase .expo-title {
+  font-family: var(--sans);
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.section-showcase .expo-meta {
+  font-size: 11px;
+  line-height: 1.55;
+  font-family: var(--sans);
+  color: var(--slate);
+}
+
+.section-showcase .expo-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 0.5px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.section-showcase .expo-stat-right { text-align: right; }
+
+.section-showcase .expo-price-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--mute);
+}
+
+.section-showcase .expo-price {
+  font-family: var(--sans);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.section-showcase .expo-price-accent {
+  color: var(--lime-dark);
 }
 
 .expo-card {
@@ -556,9 +653,19 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .section { padding: 80px 0; }
 
-.section-features { padding-top: 72px; }
+.section-soft {
+  background: var(--bg-soft);
+}
 
-.section-assets { padding-top: 0; }
+.section-features {
+  padding-top: 72px;
+  background: var(--bg);
+}
+
+.section-assets {
+  padding-top: 0;
+  background: var(--bg);
+}
 
 .section-heading {
   margin-bottom: 48px;
@@ -662,7 +769,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   padding: 48px 0;
   border-top: 0.5px solid var(--border);
   border-bottom: 0.5px solid var(--border);
-  background: var(--bg);
+  background: var(--bg-soft);
 }
 
 .stats-grid {
@@ -763,7 +870,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .editorial-quote {
   padding: 80px 0;
-  background: var(--bg-soft);
+  background: var(--bg);
   border-top: 0.5px solid var(--border);
   border-bottom: 0.5px solid var(--border);
 }
@@ -798,16 +905,16 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 /* ===== CTA Band ===== */
 
 .cta-band {
-  background: var(--ink);
-  color: var(--bg);
-  border-radius: var(--r-lg);
+  background: var(--bg-soft);
+  color: var(--ink);
+  border-radius: 12px;
   padding: 56px 48px;
   margin: 0 0 80px;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 48px;
   align-items: center;
-  border: 0.5px solid var(--ink);
+  border: 0.5px solid var(--border);
 }
 
 .cta-band h2 {
@@ -816,14 +923,15 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   line-height: 1.2;
   letter-spacing: -0.02em;
   font-weight: 500;
+  color: var(--ink);
 }
 
-.cta-band .accent-dot { color: var(--lime); }
+.cta-band .accent-dot { color: var(--lime-dark); }
 
 .cta-band p {
   font-size: 14px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--slate);
   margin-bottom: 24px;
 }
 
